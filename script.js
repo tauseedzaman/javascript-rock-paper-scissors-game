@@ -13,7 +13,7 @@ const mode = document.querySelector("#mode");
 
 let your_score = 0;
 let computer_score = 0;
-let round = 100;
+let round = 200;
 count.textContent = round;
 gameGrid.append(userChoiceDisplay, computerChoiceDisplay, resultDisplay);
 
@@ -46,12 +46,6 @@ for (let i = 0; i < choices.length; i++) {
   button.addEventListener("click", handleClick);
   gameGrid.appendChild(button);
 }
-
-function hide_buttons() {
-  const element = document.getElementsById("choice");
-  element.style.display = "none";
-}
-
 const getResult = () => {
   count.innerHTML = round;
   switch (userChoice + computerChoice) {
@@ -100,14 +94,16 @@ const finshed = () => {
 
 // change mode
 const setmode = () => {
-  if (mode.vlaue == "easy") {
+  if (mode.value == "easy") {
     round = 200;
-    alert(round)
-  } else if (mode.vlaue == "hard") {
+  } else if (mode.value == "hard") {
     round = 150;
-    alert(round)
   } else if (mode.value == "impossable") {
     round = 100;
-    alert(round)
   }
+  your_score = 0;
+  computer_score = 0;
+  count.innerHTML = round;
+  document.getElementById("your_values").textContent = your_score;
+  document.getElementById("computer_values").textContent = computer_score;
 };
