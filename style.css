@@ -1,0 +1,162 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background: gray;
+}
+
+.title {
+  text-align: center;
+  background-color: blueviolet;
+  color: cyan;
+  padding-block: 20px;
+  border-radius: 20px 20px 0px 0px;
+}
+#games {
+  background-color: black;
+  width: 600px;
+  margin-inline: auto;
+  box-shadow: 5px 5px 100px cyan;
+  border-radius: 30px 30px 0px 0px;
+  padding: 20px;
+  animation-name: bganimate;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 992px) {
+  #games {
+    width: 90%;
+  }
+}
+@keyframes bganimate {
+  0%{
+    box-shadow: 5px 5px 100px rgb(21, 255, 0);
+  }
+  20%{
+    box-shadow: 5px 5px 100px rgb(208, 255, 0);
+  }
+  40%{
+    box-shadow: 5px 5px 100px rgb(255, 145, 0);
+  }
+  40%{
+    box-shadow: 5px 5px 100px rgb(255, 0, 234);
+  }
+  80%{
+    box-shadow: 5px 5px 100px rgb(17, 0, 255);
+  }
+  100%{
+    box-shadow: 5px 5px 100px rgb(0, 238, 255);
+  }
+}
+.choice {
+  width: 100%;
+  background: blue;
+  display: grid;
+  padding-block: 10px;
+}
+.choice button {
+  padding-block: 20px;
+  font-size: 200%;
+  margin-inline: 5px;
+  border: none;
+  margin-top: 3px;
+  border-radius: 10px 0px;
+  font-weight: bolder;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.choice button:hover {
+  box-shadow: 1px 1px 15px 2px yellow;
+  color: yellow;
+  background: darkblue;
+}
+.choice p {
+  color: yellow;
+  font-size: x-large;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  padding-inline: 10px;
+}
+.computer {
+  float: right;
+  color: brown;
+}
+.score_values {
+  color: greenyellow !important;
+  animation-name: score;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  transition: 0.2s;
+}
+@keyframes score {
+  from {
+    font-weight: lighter;
+    font-style: oblique;
+  }
+  to {
+    font-weight: bolder;
+    font-style: normal;
+  }
+}
+.user_span {
+  color: yellow;
+  justify-self: center;
+  width: 97%;
+  border-radius: 5px 0px;
+  border-bottom: 1px solid cyan;
+  text-align: center;
+}
+.message {
+  color: chartreuse;
+  text-align: center;
+  width: 97%;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  border-bottom: 10px solid cyan;
+  border-style: groove;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.computer_choice {
+  color: brown;
+}
+.count{
+    float: right;
+    color:hsl(104, 100%, 50%);
+}
+.footer{
+    color: cyan;
+    padding-block: 10px;
+}
+.copyright{
+  text-align: center;
+  color: white;
+  text-decoration: dashed;
+}
+.points{
+  float: right;
+  color: rgb(0, 217, 255)!important;
+}
+.mode{
+  display:block ruby;
+  float: right;
+  padding-inline-end: 10px;
+  color: cyan;
+}
+#mode{
+  width: min-content;
+  float: right;
+  background-color: cyan;
+  border: none;
+  border-radius: 10px 0px;
+  font-weight: bolder;
+  color: black;
+}

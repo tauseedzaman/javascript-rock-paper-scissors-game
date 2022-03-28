@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rock Paper Scissors Game 🎮</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game"></div>
+    <br />
+    <div id="games">
+      <h1 class="title">🎮 Rock Paper Scissors Game 🎮</h1>
+      <div class="match">
+        <div class="choice" id="choice">
+          <div class="mode">
+            <p>Mode</p>
+            <select onchange="setmode()" id="mode">
+              <option value="easy">Easy</option>
+              <option value="hard">Hard</option>
+              <option value="impossable">Impossable</option>
+            </select>
+          </div>
+          <p class="points">Points: <span class="count"></span></p>
+          <p>
+            <span class="you"
+              >Your Score:
+              <b><span class="score_values" id="your_values"></span></b
+            ></span>
+            <span class="computer"
+              >Computer Score:
+              <b><span class="score_values" id="computer_values"></span></b
+            ></span>
+          </p>
+        </div>
+        <p class="footer"><b>Note:</b>You have 100 points on each try you are loosing one pint. You will be winner if you get score of 50, if computer get 50 score then you are the looser like always 💩. Proove that you are the Winner 💥 </p>
+        <p class="copyright"><a href="https://github.com/tauseedzaman">tauseedzaman</a> & <a href="https://freecodecamp.org">freecodecamp</a> </p>
+      </div>
+    </div>
+    <script src="./script.js" charset="utf-8"></script>
+  </body>
+</html>
